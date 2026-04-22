@@ -1,0 +1,27 @@
+# Standardinställningar för radbrytningar (hanterar skillnad mellan Windows/Mac/Linux)
+* text=auto
+
+# Tvinga GitHub att ignorera HTML-filer i språkstatistiken (löser ditt problem)
+*.html linguist-detectable=false
+*.htm linguist-detectable=false
+
+# Om du har CSS eller JavaScript som också tar över statistiken, avaktivera dem här:
+*.css linguist-detectable=false
+*.js linguist-detectable=false
+
+# Markera Python som det primära språket
+*.py linguist-detectable=true
+
+# Hantera bildfiler som binära filer (förhindrar att logotypen korrumperas)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+
+# Se till att dokumentation inte räknas som kod
+docs/* linguist-documentation
+README.md linguist-documentation
+
+# Ignorera loggfiler om de råkat bli uppladdade
+*.log linguist-detectable=false
